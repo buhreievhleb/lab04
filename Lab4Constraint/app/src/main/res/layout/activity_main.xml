@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/constraint"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="170dp"
+        android:layout_height="70dp"
+        android:layout_margin="40dp"
+        android:gravity="center"
+        android:text="Перемістити"
+        android:textSize="19sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text0"
+        android:background="@drawable/rectangle"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:text="Text"
+        android:gravity="center"
+        android:textSize="23sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="150dp"/>
+
+    <TextView
+        android:id="@+id/green_block"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/green"
+        app:layout_constraintTop_toBottomOf="@id/text0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="100dp"/>
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:background="@drawable/rectangle"
+        android:gravity="center"
+        android:text="Text"
+        android:textSize="23sp"
+        app:layout_constraintTop_toTopOf="@id/text0"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/pink_block"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/pink"
+        app:layout_constraintTop_toBottomOf="@id/green_block"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:id="@+id/text2"
+        android:background="@drawable/rectangle"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:text="Text"
+        android:textSize="23sp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@id/green_block"
+        app:layout_constraintTop_toTopOf="@id/green_block"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:background="@drawable/rectangle"
+        android:gravity="center"
+        android:text="Text"
+        android:textSize="23sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/pink_block"
+        />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:background="@drawable/rectangle"
+        android:gravity="center"
+        android:text="Button"
+        android:textColor="@color/black"
+        android:textSize="19sp"
+        app:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/green_block"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/green_block" />
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:text="Text"
+        android:textSize="23sp"
+        android:gravity="center"
+        android:background="@drawable/rectangle"
+        app:layout_constraintBottom_toBottomOf="@id/pink_block"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

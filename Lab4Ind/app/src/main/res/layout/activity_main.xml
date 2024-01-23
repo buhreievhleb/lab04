@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/surname_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:text="Прізвище"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    <EditText
+        android:id="@+id/surname_edit"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:hint="Введіть прізвище"
+        android:textSize="16dp"
+        app:layout_constraintBaseline_toBaselineOf="@id/surname_text"
+        app:layout_constraintStart_toEndOf="@id/surname_text"></EditText>
+
+    <TextView
+        android:id="@+id/name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:text="Ім'я"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/surname_text" />
+
+    <EditText
+        android:id="@+id/name_edit"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:hint="Введіть ім'я"
+        android:textSize="16dp"
+        app:layout_constraintBaseline_toBaselineOf="@id/name_text"
+        app:layout_constraintStart_toStartOf="@id/surname_edit" />
+
+    <TextView
+        android:id="@+id/date_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:text="Дата"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/name_text" />
+
+    <EditText
+        android:id="@+id/date_edit"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:hint="Введіть дату народження"
+        android:textSize="16dp"
+        app:layout_constraintBaseline_toBaselineOf="@id/date_text"
+        app:layout_constraintStart_toStartOf="@id/surname_edit" />
+
+    <Button
+        android:id="@+id/remember"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:text="Запам'ятати"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/date_text"></Button>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/empty"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/remember"></ImageView>
+
+    <TextView
+        android:id="@+id/res_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text=""
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image" />
+
+    <Button
+        android:id="@+id/clear"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:text="Очистити"
+        app:layout_constraintEnd_toStartOf="@id/exit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/res_text"></Button>
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:text="Вихід"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/clear"
+        app:layout_constraintTop_toBottomOf="@id/res_text"></Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
